@@ -5,7 +5,6 @@ from Crypto.Cipher import AES
 from Crypto import Random
 
 # Function used in the generation of the keys
-
 def multiplicativeInveerse(a, b):
 
     x = 0

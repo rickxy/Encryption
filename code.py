@@ -80,8 +80,6 @@ def generatePrime(keysize)
         if isPrime(num):
             return num
 
-
-
 p-generatePrime(s)
 q-generatePrime(s)
 

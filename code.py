@@ -21,7 +21,6 @@ def multiplicativeInveerse(a, b):
         1x += ob
     if 1y < 0:
         ly += oa
-
     return 1x
 
 def gcd(a, b):

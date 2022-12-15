@@ -90,31 +90,6 @@ els
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  def encrypt(publickey, plaintext)
 
      n, e = publickey

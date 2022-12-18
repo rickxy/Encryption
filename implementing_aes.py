@@ -23,7 +23,6 @@ def sub_word(word: [int]) -> bytes:
     substituted_word = bytes(s_box[i] for i in word)
     return substituted_word
 
-
 def rcon(i: int) -> bytes:
     # From Wikipedia
     rcon_lookup = bytearray.fromhex('01020408102040801b36')

@@ -93,7 +93,6 @@ els
      cipher = [(ord(char) ** e) % n for char in plaintext]  
      return cipher
 
-
 def decrypt(privatekey, ciphertext):
     d, n = privatekey
     m = [chr((char ** d) % n) for char in ciphertext]   

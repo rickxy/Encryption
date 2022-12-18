@@ -60,7 +60,6 @@ def key_expansion(key: bytes, nb: int = 4) -> [[[int]]]:
 
     return [w[i*4:(i+1)*4] for i in range(len(w) // 4)]
 
-
 def add_round_key(state: [[int]], key_schedule: [[[int]]], round: int):
     round_key = key_schedule[round]
     for r in range(len(state)):

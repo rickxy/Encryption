@@ -32,7 +32,6 @@ def rcon(i: int) -> bytes:
 def xor_bytes(a: bytes, b: bytes) -> bytes:
     return bytes([x ^ y for (x, y) in zip(a, b)])
 
-
 def rot_word(word: [int]) -> [int]:
     return word[1:] + word[:1]
 

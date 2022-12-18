@@ -35,7 +35,6 @@ def xor_bytes(a: bytes, b: bytes) -> bytes:
 def rot_word(word: [int]) -> [int]:
     return word[1:] + word[:1]
 
-
 def key_expansion(key: bytes, nb: int = 4) -> [[[int]]]:
 
     nk = len(key) // 4

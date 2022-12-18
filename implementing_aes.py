@@ -83,7 +83,6 @@ def xtime(a: int) -> int:
         return ((a << 1) ^ 0x1b) & 0xff
     return a << 1
 
-
 def mix_column(col: [int]):
     c_0 = col[0]
     all_xor = col[0] ^ col[1] ^ col[2] ^ col[3]

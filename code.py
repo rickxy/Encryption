@@ -87,9 +87,6 @@ if not (isPrime(p) and isPrime(q))
      raise valueError('Both number must be prime.')
 els
 
-
-
-
  def encrypt(publickey, plaintext)
 
      n, e = publickey

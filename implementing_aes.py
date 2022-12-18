@@ -69,7 +69,6 @@ def sub_bytes(state: [[int]]):
     for r in range(len(state)):
         state[r] = [s_box[state[r][c]] for c in range(len(state[0]))]
 
-
 def shift_rows(state: [[int]]):
     # [00, 10, 20, 30]     [00, 10, 20, 30]
     # [01, 11, 21, 31] --> [11, 21, 31, 01]

@@ -95,7 +95,6 @@ def mix_columns(state: [[int]]):
     for r in state:
         mix_column(r)
 
-
 def state_from_bytes(data: bytes) -> [[int]]:
     state = [data[i*4:(i+1)*4] for i in range(len(data) // 4)]
     return state

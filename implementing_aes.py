@@ -65,7 +65,6 @@ def add_round_key(state: [[int]], key_schedule: [[[int]]], round: int):
     for r in range(len(state)):
         state[r] = [state[r][c] ^ round_key[r][c] for c in range(len(state[0]))]
 
-
 def sub_bytes(state: [[int]]):
     for r in range(len(state)):
         state[r] = [s_box[state[r][c]] for c in range(len(state[0]))]

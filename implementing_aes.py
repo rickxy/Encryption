@@ -91,7 +91,6 @@ def mix_column(col: [int]):
     col[2] ^= all_xor ^ xtime(col[2] ^ col[3])
     col[3] ^= all_xor ^ xtime(c_0 ^ col[3])
 
-
 def mix_columns(state: [[int]]):
     for r in state:
         mix_column(r)

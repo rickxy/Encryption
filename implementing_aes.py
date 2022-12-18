@@ -29,7 +29,6 @@ def rcon(i: int) -> bytes:
     rcon_value = bytes([rcon_lookup[i-1], 0, 0, 0])
     return rcon_value
 
-
 def xor_bytes(a: bytes, b: bytes) -> bytes:
     return bytes([x ^ y for (x, y) in zip(a, b)])
 

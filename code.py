@@ -73,7 +73,6 @@ for prime in low:
 
 return millerRabin(n)
 
-
 def generatePrime(keysize)
     while True:
         num = random.randrange(2**(keysize-1), 2**(keysize))

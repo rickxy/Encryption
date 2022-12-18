@@ -78,7 +78,6 @@ def shift_rows(state: [[int]]):
     state[0][2], state[1][2], state[2][2], state[3][2] = state[2][2], state[3][2], state[0][2], state[1][2]
     state[0][3], state[1][3], state[2][3], state[3][3] = state[3][3], state[0][3], state[1][3], state[2][3]
 
-
 def xtime(a: int) -> int:
     if a & 0x80:
         return ((a << 1) ^ 0x1b) & 0xff

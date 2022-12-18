@@ -19,7 +19,6 @@ s_box_string = '63 7c 77 7b f2 6b 6f c5 30 01 67 2b fe d7 ab 76' \
 
 s_box = bytearray.fromhex(s_box_string)
 
-
 def sub_word(word: [int]) -> bytes:
     substituted_word = bytes(s_box[i] for i in word)
     return substituted_word

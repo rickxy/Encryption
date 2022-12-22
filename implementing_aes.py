@@ -177,7 +177,6 @@ def xtimes_0d(b):
     # 0x0d = 13 = b1101 = ((x*2+x)*2)*2+x
     return xtime(xtime(xtime(b) ^ b)) ^ b
 
-
 def xtimes_09(b):
     # 0x09 = 9  = b1001 = ((x*2)*2)*2+x
     return xtime(xtime(xtime(b))) ^ b

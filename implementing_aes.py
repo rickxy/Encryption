@@ -99,7 +99,6 @@ def state_from_bytes(data: bytes) -> [[int]]:
     state = [data[i*4:(i+1)*4] for i in range(len(data) // 4)]
     return state
 
-
 def bytes_from_state(state: [[int]]) -> bytes:
     return bytes(state[0] + state[1] + state[2] + state[3])
 

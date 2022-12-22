@@ -242,7 +242,6 @@ def aes_decryption(cipher: bytes, key: bytes) -> bytes:
     plain = bytes_from_state(state)
     return plain
 
-
 if __name__ == "__main__":
 
     # NIST FIPS PUB 197 ADVANCED ENCRYPTION STANDARD (AES)
@@ -274,6 +273,6 @@ if __name__ == "__main__":
     expected_ciphertext = bytearray.fromhex('8ea2b7ca516745bfeafc49904b496089')
     ciphertext = aes_encryption(plaintext, key)
     recovered_plaintext = aes_decryption(ciphertext, key)
-
+    
     assert (ciphertext == expected_ciphertext)
     assert (recovered_plaintext == plaintext)

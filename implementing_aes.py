@@ -102,7 +102,6 @@ def state_from_bytes(data: bytes) -> [[int]]:
 def bytes_from_state(state: [[int]]) -> bytes:
     return bytes(state[0] + state[1] + state[2] + state[3])
 
-
 def aes_encryption(data: bytes, key: bytes) -> bytes:
 
     key_bit_length = len(key) * 8

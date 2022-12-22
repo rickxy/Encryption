@@ -132,7 +132,6 @@ def aes_encryption(data: bytes, key: bytes) -> bytes:
     cipher = bytes_from_state(state)
     return cipher
 
-
 def inv_shift_rows(state: [[int]]) -> [[int]]:
     # [00, 10, 20, 30]     [00, 10, 20, 30]
     # [01, 11, 21, 31] <-- [11, 21, 31, 01]

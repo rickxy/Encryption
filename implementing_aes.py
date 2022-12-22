@@ -142,7 +142,6 @@ def inv_shift_rows(state: [[int]]) -> [[int]]:
     state[3][3], state[0][3], state[1][3], state[2][3] = state[0][3], state[1][3], state[2][3], state[3][3]
     return
 
-
 inv_s_box_string = '52 09 6a d5 30 36 a5 38 bf 40 a3 9e 81 f3 d7 fb' \
                    '7c e3 39 82 9b 2f ff 87 34 8e 43 44 c4 de e9 cb' \
                    '54 7b 94 32 a6 c2 23 3d ee 4c 95 0b 42 fa c3 4e' \

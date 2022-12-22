@@ -181,7 +181,6 @@ def xtimes_09(b):
     # 0x09 = 9  = b1001 = ((x*2)*2)*2+x
     return xtime(xtime(xtime(b))) ^ b
 
-
 def inv_mix_column(col: [int]):
     c_0, c_1, c_2, c_3 = col[0], col[1], col[2], col[3]
     col[0] = xtimes_0e(c_0) ^ xtimes_0b(c_1) ^ xtimes_0d(c_2) ^ xtimes_09(c_3)

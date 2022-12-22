@@ -165,7 +165,6 @@ def inv_sub_bytes(state: [[int]]) -> [[int]]:
     for r in range(len(state)):
         state[r] = [inv_s_box[state[r][c]] for c in range(len(state[0]))]
 
-
 def xtimes_0e(b):
     # 0x0e = 14 = b1110 = ((x * 2 + x) * 2 + x) * 2
     return xtime(xtime(xtime(b) ^ b) ^ b)

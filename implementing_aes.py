@@ -161,7 +161,6 @@ inv_s_box_string = '52 09 6a d5 30 36 a5 38 bf 40 a3 9e 81 f3 d7 fb' \
 
 inv_s_box = bytearray.fromhex(inv_s_box_string)
 
-
 def inv_sub_bytes(state: [[int]]) -> [[int]]:
     for r in range(len(state)):
         state[r] = [inv_s_box[state[r][c]] for c in range(len(state[0]))]

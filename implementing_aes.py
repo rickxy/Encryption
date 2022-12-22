@@ -169,7 +169,6 @@ def xtimes_0e(b):
     # 0x0e = 14 = b1110 = ((x * 2 + x) * 2 + x) * 2
     return xtime(xtime(xtime(b) ^ b) ^ b)
 
-
 def xtimes_0b(b):
     # 0x0b = 11 = b1011 = ((x*2)*2+x)*2+x
     return xtime(xtime(xtime(b)) ^ b) ^ b

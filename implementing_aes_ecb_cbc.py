@@ -11,7 +11,6 @@ def aes_ecb_encryption(plain: bytes, key: bytes) -> bytes:
         cipher += c_j
     return bytes(cipher)
 
-
 def aes_ecb_decryption(cipher: bytes, key: bytes) -> bytes:
     plain = []
     for j in range(len(cipher) // AES_BLOCK_SIZE):

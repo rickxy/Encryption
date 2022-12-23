@@ -95,7 +95,6 @@ def GCTR(K, ICB, X):
     # Step 9
     return Y
 
-
 def aes_gcm_encrypt(P, K, IV, A, t):
 
     # Step 1

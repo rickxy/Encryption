@@ -4,7 +4,6 @@ from implementing_aes import aes_encryption
 def xor_bytes(bytes_a: bytes, bytes_b: bytes) -> bytes:
     return bytes([a ^ b for (a, b) in zip(bytes_a, bytes_b)])
 
-
 def MUL(X_bytes, Y_bytes):
 
     X = int.from_bytes(X_bytes, 'big')

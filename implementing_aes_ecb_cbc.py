@@ -36,7 +36,6 @@ def aes_cbc_encryption(plain: bytes, key: bytes, iv: bytes) -> bytes:
 
     return bytes(cipher)
 
-
 def aes_cbc_decryption(cipher: bytes, key: bytes, iv: bytes) -> bytes:
 
     plain = []

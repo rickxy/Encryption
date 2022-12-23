@@ -19,7 +19,6 @@ def aes_ecb_decryption(cipher: bytes, key: bytes) -> bytes:
         plain += p_j
     return bytes(plain)
 
-
 def aes_cbc_encryption(plain: bytes, key: bytes, iv: bytes) -> bytes:
 
     cipher = []

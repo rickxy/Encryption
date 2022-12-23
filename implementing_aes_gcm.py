@@ -56,7 +56,6 @@ def GHASH(H, X):
     # Step 4
     return Y_i_1
 
-
 def INC_32(Y_bytes):
     Y = int.from_bytes(Y_bytes, 'big')
     Y_inc = ((Y >> 32) << 32) ^ (((Y & 0xffffffff) + 1) & 0xffffffff)

@@ -1,7 +1,6 @@
 import math
 from implementing_aes import aes_encryption
 
-
 def xor_bytes(bytes_a: bytes, bytes_b: bytes) -> bytes:
     return bytes([a ^ b for (a, b) in zip(bytes_a, bytes_b)])
 

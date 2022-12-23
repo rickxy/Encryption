@@ -55,7 +55,6 @@ def aes_cbc_decryption(cipher: bytes, key: bytes, iv: bytes) -> bytes:
 
     return bytes(plain)
 
-
 if __name__ == "__main__":
 
     # NIST Special Publication 800-38A

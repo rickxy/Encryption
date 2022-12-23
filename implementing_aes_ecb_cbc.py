@@ -2,7 +2,6 @@ from implementing_aes import aes_encryption, aes_decryption, xor_bytes
 
 AES_BLOCK_SIZE = 16
 
-
 def aes_ecb_encryption(plain: bytes, key: bytes) -> bytes:
     # Assumption: length of data is multiple of 128 bits
     cipher = []

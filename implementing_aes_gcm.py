@@ -62,7 +62,6 @@ def INC_32(Y_bytes):
     Y_inc = ((Y >> 32) << 32) ^ (((Y & 0xffffffff) + 1) & 0xffffffff)
     return Y_inc.to_bytes(16, 'big')
 
-
 def GCTR(K, ICB, X):
 
     # Step 1

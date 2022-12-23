@@ -35,7 +35,6 @@ def MUL(X_bytes, Y_bytes):
     # Step 4
     return Z_i.to_bytes(16, 'big')
 
-
 def GHASH(H, X):
 
     # Input constraint: len(X) = 128m

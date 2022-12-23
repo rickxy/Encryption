@@ -131,7 +131,6 @@ def aes_gcm_encrypt(P, K, IV, A, t):
     # Step 7
     return C, T
 
-
 if __name__ == "__main__":
 
     # NIST Special Publication 800-38D

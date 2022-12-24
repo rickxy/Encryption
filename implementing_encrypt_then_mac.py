@@ -51,7 +51,6 @@ def verify_hmac_sha_256_tag(tag, data, key):
     h.update(data)
     h.verify(tag)
 
-
 if __name__ == "__main__":
 
     # Pre-condition: 2 keys for AES-256 CBC and HMAC-SHA-256

@@ -38,7 +38,6 @@ def aes_256_cbc_decrypt(cipherdata, key):
 
     return recovered_plaintext
 
-
 def create_hmac_sha_256_tag(data, key):
     hash_function = hashes.SHA256()
     h = hmac.HMAC(key, hash_function)

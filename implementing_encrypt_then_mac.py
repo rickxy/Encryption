@@ -45,7 +45,6 @@ def create_hmac_sha_256_tag(data, key):
     hmac_tag = h.finalize()
     return hmac_tag
 
-
 def verify_hmac_sha_256_tag(tag, data, key):
     hash_function = hashes.SHA256()
     h = hmac.HMAC(key, hash_function)

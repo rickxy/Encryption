@@ -5,7 +5,6 @@ from cryptography.hazmat.primitives.ciphers.algorithms import AES
 from cryptography.hazmat.primitives.ciphers.modes import CBC
 from cryptography.exceptions import InvalidSignature
 
-
 def aes_256_cbc_encrypt(plaintext, key):
 
     # Pad the data

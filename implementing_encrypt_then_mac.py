@@ -22,7 +22,6 @@ def aes_256_cbc_encrypt(plaintext, key):
 
     return iv + ciphertext
 
-
 def aes_256_cbc_decrypt(cipherdata, key):
 
     # Extract iv and ciphertext

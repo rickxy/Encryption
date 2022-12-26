@@ -8,7 +8,6 @@ def H(H_A, message):
     H.update(message)
     return H.finalize()
 
-
 def hmac(H_A, K, text):
 
     # HMAC Parameters and Symbols

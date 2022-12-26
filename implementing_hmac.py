@@ -25,7 +25,6 @@ def hmac(H_A, K, text):
 
     return H(H_A, xor(K_0, opad) + H(H_A, xor(K_0, ipad) + text))
 
-
 if __name__ == "__main__":
 
     # NIST FIPS PUB 198-1 The Keyed-Hash Message Authentication Code (HMAC)

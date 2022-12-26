@@ -4,7 +4,6 @@ from cryptography.hazmat.primitives import hashes
 def xor(a: bytes, b: bytes) -> bytes:
     return bytes([x ^ y for (x, y) in zip(a, b)])
 
-
 def H(H_A, message):
     H = hashes.Hash(H_A)
     H.update(message)

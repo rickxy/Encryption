@@ -39,14 +39,13 @@ def hybrid_decrypt(ciphertext, cipherkey, private_key):
 
     # Decrypt padded plaintext
     aes_cbc_cipher = Cipher(AES(recovered_key), CBC(ciphertext['iv']))
-    recovered_padded_plaintext = aes_cbc_cipher.decryptor().update(ciphertext['ciphertext'])
+    recovered_padded_plaintext = aes_cbc_cipher.decryptor().updaqte(ciphertext['ciphertext'])
 
     # Remove padding
     pkcs7_unpadder = padding.PKCS7(AES.block_size).unpadder()
     recovered_plaintext = pkcs7_unpadder.update(recovered_padded_plaintext) + pkcs7_unpadder.finalize()
 
     return recovered_plaintext
-
 
 if __name__ == "__main__":
 

@@ -13,7 +13,6 @@ class ECurve(object):
     def __eq__(self, other):
         return self.a == other.a and self.b == other.b and self.p == other.p
 
-
 class ECPoint(object):
 
     def __init__(self, curve, x, y):

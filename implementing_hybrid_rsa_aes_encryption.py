@@ -6,7 +6,6 @@ from cryptography.hazmat.primitives.ciphers.algorithms import AES
 from cryptography.hazmat.primitives.ciphers.modes import CBC
 from cryptography.hazmat.primitives.hashes import SHA256
 
-
 def hybrid_encrypt(plaintext, public_key):
 
     # Pad the plaintext

@@ -1,6 +1,5 @@
 import os
 
-
 class ECurve(object):
 
     def __init__(self, a, b, p):

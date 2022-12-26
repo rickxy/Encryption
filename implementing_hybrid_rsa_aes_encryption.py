@@ -30,7 +30,6 @@ def hybrid_encrypt(plaintext, public_key):
 
     return {'iv': iv, 'ciphertext': ciphertext}, cipherkey
 
-
 def hybrid_decrypt(ciphertext, cipherkey, private_key):
 
     # Decrypt AES key

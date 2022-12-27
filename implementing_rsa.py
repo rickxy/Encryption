@@ -70,7 +70,6 @@ def rsa_decrypt(ciphertext: int, d: int, n: int) -> bytes:
     p_int = pow(ciphertext, d, n)
     return p_int.to_bytes((p_int.bit_length() + 7) // 8, 'big')
 
-
 if __name__ == "__main__":
 
     rsa_key_size = 2048

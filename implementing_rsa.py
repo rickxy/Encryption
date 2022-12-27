@@ -1,6 +1,5 @@
 import os
 
-
 def get_power_2_factors(n: int) -> (int, int):
     r = 0
     d = n

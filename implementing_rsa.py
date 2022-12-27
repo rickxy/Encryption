@@ -58,7 +58,6 @@ def extended_gcd(a, b):
     u, v = extended_gcd(b, a % b)
     return v, u - v * (a // b)
 
-
 def calculate_private_key(e: int, p: int, q: int) -> int:
     u, _ = extended_gcd(e, (p-1)*(q-1))
     return u

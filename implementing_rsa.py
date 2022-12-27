@@ -66,7 +66,6 @@ def rsa_encrypt(plaintext: bytes, e: int, n: int) -> int:
     p_int = int.from_bytes(plaintext, "big")
     return pow(p_int, e, n)
 
-
 def rsa_decrypt(ciphertext: int, d: int, n: int) -> bytes:
     p_int = pow(ciphertext, d, n)
     return p_int.to_bytes((p_int.bit_length() + 7) // 8, 'big')

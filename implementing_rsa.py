@@ -33,7 +33,6 @@ def miller_rabin_prime_test(n: int, k: int) -> bool:
 def get_random_bits(bit_length: int) -> int:
     return int.from_bytes(os.urandom((bit_length + 7) // 8), 'big')
 
-
 def generate_prime_number(bit_length: int) -> int:
 
     # prime needs to be in range [2^(n-1), 2^n-1]

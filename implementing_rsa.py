@@ -8,7 +8,6 @@ def get_power_2_factors(n: int) -> (int, int):
         r += 1
     return r, d
 
-
 def miller_rabin_prime_test(n: int, k: int) -> bool:
 
     # Factor powers of 2 from n - 1 s.t. n - 1 = 2^r * d

@@ -51,7 +51,6 @@ def generate_prime_number(bit_length: int) -> int:
         if miller_rabin_prime_test(candidate_prime, k):
             return candidate_prime
 
-
 def extended_gcd(a, b):
     if not b:
         return 1, 0

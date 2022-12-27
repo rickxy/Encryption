@@ -62,7 +62,6 @@ def calculate_private_key(e: int, p: int, q: int) -> int:
     u, _ = extended_gcd(e, (p-1)*(q-1))
     return u
 
-
 def rsa_encrypt(plaintext: bytes, e: int, n: int) -> int:
     p_int = int.from_bytes(plaintext, "big")
     return pow(p_int, e, n)

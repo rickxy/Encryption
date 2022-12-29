@@ -53,7 +53,6 @@ def Sig_0(x: int) -> int:
 def Sig_1(x: int) -> int:
     return rotr(x, 6) ^ rotr(x, 11) ^ rotr(x, 25)
 
-
 def sig_0(x: int) -> int:
     return rotr(x, 7) ^ rotr(x, 18) ^ shr(x, 3)
 

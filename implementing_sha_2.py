@@ -45,7 +45,6 @@ def sha_256_pad_and_parse_message(message: bytes) -> [int]:
 def shr(x: int, n: int) -> int:
     return x >> n
 
-
 def rotr(x: int, n: int) -> int:
     return (x >> n) | (x << (32-n)) & 0xffffffff
 

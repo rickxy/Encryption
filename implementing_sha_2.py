@@ -50,7 +50,6 @@ def rotr(x: int, n: int) -> int:
 def Sig_0(x: int) -> int:
     return rotr(x, 2) ^ rotr(x, 13) ^ rotr(x, 22)
 
-
 def Sig_1(x: int) -> int:
     return rotr(x, 6) ^ rotr(x, 11) ^ rotr(x, 25)
 

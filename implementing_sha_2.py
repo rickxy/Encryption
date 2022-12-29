@@ -48,7 +48,6 @@ def shr(x: int, n: int) -> int:
 def rotr(x: int, n: int) -> int:
     return (x >> n) | (x << (32-n)) & 0xffffffff
 
-
 def Sig_0(x: int) -> int:
     return rotr(x, 2) ^ rotr(x, 13) ^ rotr(x, 22)
 

@@ -41,7 +41,6 @@ def sha_256_pad_and_parse_message(message: bytes) -> [int]:
 
     return message_blocks
 
-
 def shr(x: int, n: int) -> int:
     return x >> n
 

@@ -17,7 +17,6 @@ def int_from_bytes(x: bytes) -> int:
 
 K_256 = [int_from_bytes(K[i*4:(i+1)*4]) for i in range(len(K) // 4)]
 
-
 def sha_256_pad_and_parse_message(message: bytes) -> [int]:
 
     # Padding the Message
